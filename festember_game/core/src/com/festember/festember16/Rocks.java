@@ -27,7 +27,7 @@ public class Rocks {
         size=(random.nextInt(10)+5)*10;
 
         Random random2=new Random();
-        velocity=-((random2.nextInt(8)+2));
+        velocity=-((random2.nextInt(10)+4));
 
         posX= Gdx.graphics.getWidth();
 
@@ -35,7 +35,7 @@ public class Rocks {
         posY=random3.nextInt(Gdx.graphics.getHeight()-20);
 
         Random random4=new Random();
-        max_appearance=random4.nextInt(2)+1;
+        max_appearance=random4.nextInt(3)+1;
 
     }
 
@@ -90,4 +90,6 @@ public class Rocks {
     public void setRock(Sprite rock) {
         this.rock = rock;
     }
+
+
 }

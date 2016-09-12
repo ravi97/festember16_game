@@ -2,7 +2,7 @@ package com.festember.festember16;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.util.Log;
+
 
 /**
  * Created by Ravikiran on 9/9/2016.

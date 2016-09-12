@@ -3,7 +3,6 @@ package com.festember.festember16;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
-import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Texture;
@@ -11,21 +10,16 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.graphics.glutils.ShaderProgram;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
-import com.badlogic.gdx.scenes.scene2d.InputListener;
-import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 
-import java.awt.Color;
-import java.util.ArrayList;
-import java.util.Random;
 
-import sun.font.TrueTypeFont;
-import sun.rmi.runtime.Log;
+import java.util.ArrayList;
+
+
 
 
 public class MyGdxGame extends ApplicationAdapter implements InputProcessor{
@@ -173,7 +167,7 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor{
 	@Override
 	public void render () {
 
-
+			Gdx.app.log("mylog",String.valueOf(Gdx.graphics.getFramesPerSecond()));
 
 			batch.begin();
 
@@ -232,11 +226,12 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor{
 		}
 		else{
 			//game over
+			batch.setColor(com.badlogic.gdx.graphics.Color.WHITE);
 			scoreDisp.draw(batch,"game over",Gdx.graphics.getWidth()/2,Gdx.graphics.getHeight()*3/4);
 			scoreDisp.draw(batch,"play again",Gdx.graphics.getWidth()/4,Gdx.graphics.getHeight()/2);
 			scoreDisp.draw(batch,"share score",Gdx.graphics.getWidth()*3/4,Gdx.graphics.getHeight()/2);
 			backgroundMusic.stop();
-			//defeat.play();
+
 			gameOver=true;
 		}
 
@@ -269,7 +264,9 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor{
 
 
 			batch.draw(heart, 10, Gdx.graphics.getHeight() - 60, 50, 50);
+		if(!gameOver){
 			pauseButton.draw(batch, batch.getColor().a);
+		}
 			batch.end();
 
 
@@ -283,7 +280,7 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor{
 
 
 
-			if (score % 100 == 0) {
+			if (score % 75 == 0) {
 				no_of_rocks++;
 				Rocks newRock = new Rocks();
 				newRock.setRock(new Sprite(obstacle));
@@ -343,7 +340,7 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor{
 
 
 	}
-	
+
 	@Override
 	public void dispose () {
 		batch.dispose();
@@ -371,6 +368,7 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor{
 		no_of_rocks=0;
 		gameOver=false;
 		playerMoving=false;
+		backgroundMusic.play();
 
 	}
 
