@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Ravikiran\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.9.3\1a3775429980a6c8da0cdefb656ad1dabf91d629\gdx-1.9.3.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="1a3775429980a6c8da0cdefb656ad1dabf91d629">
+        <dex dex="E:\Ravi\coding and development\festember game\festember16_game\festember_game\android\build\intermediates\pre-dexed\debug\gdx-1.9.3_32e1cec7bb710389c0f2a860c4537ff659e8fba3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ravikiran\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-bullet\1.9.3\3f3eedd7e3b182aca002bde7ff1abad0a4e7fea2\gdx-bullet-1.9.3.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="3f3eedd7e3b182aca002bde7ff1abad0a4e7fea2">
+        <dex dex="E:\Ravi\coding and development\festember game\festember16_game\festember_game\android\build\intermediates\pre-dexed\debug\gdx-bullet-1.9.3_fd1f378104ba7aabf5f37aaf5bae026f5d2456d8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ravikiran\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-box2d\1.9.3\924800875b5ce70081021240a1301b60993b62e6\gdx-box2d-1.9.3.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="924800875b5ce70081021240a1301b60993b62e6">
+        <dex dex="E:\Ravi\coding and development\festember game\festember16_game\festember_game\android\build\intermediates\pre-dexed\debug\gdx-box2d-1.9.3_38296c4f12be616bc84182b2e6bd78bff0f886a6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ravikiran\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.9.3\c45573bf68b55442990936f007e7d6823d259c1f\gdx-backend-android-1.9.3.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="c45573bf68b55442990936f007e7d6823d259c1f">
+        <dex dex="E:\Ravi\coding and development\festember game\festember16_game\festember_game\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.9.3_2c1b9eed1ca86931b2f53624c9bd4cd5c6bfc2a1.jar" />
+    </item>
+
+</items>
